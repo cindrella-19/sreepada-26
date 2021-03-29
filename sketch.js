@@ -15,7 +15,8 @@ function setup(){
     engine = Engine.create();
     world = engine.world;
 
-    
+    car=new Ground(200,200,20,20)
+
     ground = new Ground(600,height,1200,20)
 
     box1 = new Box(700,320,70,70);
@@ -59,4 +60,5 @@ function draw(){
     log5.display();
 
     bird.display();
+    car.display();
 }
